@@ -63,7 +63,7 @@ const library = {
     return Math.ceil(average);
   },
   sortBooks() {
-    return this.bookShelf.slice().sort((a, b) => b.year - a.year);
+    return [...this.bookShelf].sort((a, b) => b.year - a.year);
   },
 };
 
